@@ -4,7 +4,55 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var articleone = {
+    title :'Article One|Swaraj Deep',
+    heading:'Article One',
+    date: '2 feb 2017',
+    content:`
+                 <p>
+                    Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                </p>
+                <p>
+                    Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                </p>
+                <p>
+                    Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                </p>`
+};
+function createtemplate(data)
+{
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+    var htmltemplate=`<html>
+        <head>
+            <title>
+                ${title}
+            </title>
+            <meta name ="viewport" content="width=device-width,initial-scale=1"/>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div class="contents">
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <hr/>
+                <h1>
+                    ${heading}
+                </h1>
+                <div>
+                    ${date}
+                </div>
+                <div>
+                   ${content}
+                </div>
+            </div>
+        </body>
+    </html>`;
+    return htmetemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -17,7 +65,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/article-one',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+   res.send(createtemplate(articleone));
 });
 app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-two.html'));
