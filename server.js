@@ -6,20 +6,23 @@ var app = express();
 app.use(morgan('combined'));
 var articles=
 {
-    'article-one ': {
+    'article-one':{
         title :'Article One|Swaraj Deep',
         heading:'Article One',
         date: '2 feb 2017',
         content:`
                      <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                    </p>
-                    <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                    </p>
-                    <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                    </p>`,
+                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                     </p>
+                      <p>
+                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                     </p>
+                      <p>
+                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
+                     </p>
+                    `,
+        
+        },  
     },
     'article-two':{
         title :'Article Two|Swaraj Deep',
