@@ -35,7 +35,9 @@ var articles=
                     <p>
                         Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.
                     </p>
-                    `,},
+                    `,
+        
+        },
     'article-three':{
         title :'Article Three|Swaraj Deep',
         heading:'Article Three',
