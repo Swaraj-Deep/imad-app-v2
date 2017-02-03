@@ -1,7 +1,5 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
 }
 
 .center {
@@ -20,13 +18,13 @@ body {
     height: 200px;
 }
 .contents
-            {
-                max-width: 800px;
-                margin: 0 auto;
-                color: #1d1c1c;
-                font-family: sans-serif;
-                background: white;
-                padding-top: 60px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #1d1c1c;
+    font-family: sans-serif;
+    background: white;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
