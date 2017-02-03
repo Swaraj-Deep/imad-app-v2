@@ -23,7 +23,6 @@ var articles=
                     `,
         
         },  
-    },
     'article-two':{
         title :'Article Two|Swaraj Deep',
         heading:'Article Two',
