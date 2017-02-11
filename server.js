@@ -117,9 +117,9 @@ app.get('/:articleName',function(req,res){
 });
 
 var names=[];
-app.get('/submit-name/:names',function(req,res){
+app.get('/submit-name/:name',function(req,res){
     
-   var names=req.params.names;
+   var name=req.params.name;
    names.push(name);
    res.send(JSON.stringify(names));
     
