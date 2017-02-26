@@ -144,9 +144,26 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/:articleName',function(req,res){
+app.get('/articles/:articleName',function(req,res){
     var articleName=req.params.articleName;
-   res.send(createTemplate(articles[articleName]));
+    pool.query("SELECT * FROM  article WHERE title =" + req.params.articleName,function(err,result){
+        if(err) {
+            
+            res.status(500).send(err.toString());
+        }else{
+            
+            if(result.rows.length===0){
+                
+                res.status(404).send('We were unable to find the article requested');
+            }
+            else{
+                
+                var articleData=result.rows[0];
+                res.send(createTemplate(articleData));
+            }
+        }
+    });
+   
 });
 
 
