@@ -20,60 +20,6 @@ app.get('/submit-name',function(req,res){// /submit-name?name=xxxx
    res.send(JSON.stringify(names));
     
 });
-var articles=
-{
-    'article-one':{
-        title :'Article One|Swaraj Deep',
-        heading:'Article One',
-        date: '2 feb 2017',
-        content:`
-                     <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                     </p>
-                      <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                     </p>
-                      <p>
-                        Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.Hi! I am Swaraj Deep.This is my very first page on my webapp.
-                     </p>
-                    `,
-        
-        },  
-    'article-two':{
-        title :'Article Two|Swaraj Deep',
-        heading:'Article Two',
-        date: '3 feb 2017',
-        content:`
-                     <p>
-                        Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.
-                    </p>
-                    <p>
-                        Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.
-                    </p>
-                    <p>
-                        Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.Hi! I am Swaraj Deep.This is my very second page on my webapp.
-                    </p>
-                    `,
-        
-        },
-    'article-three':{
-        title :'Article Three|Swaraj Deep',
-        heading:'Article Three',
-        date: '6 feb 2017',
-        content:`
-                     <p>
-                        Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.
-                     </p>
-                     <p>
-                        Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.
-                     </p>
-                     <p>
-                        Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.   Hi! I am Swaraj Deep.This is my third page on my webapp.
-                     </p>
-                     `
-                     ,
-        },
-};
 function createTemplate(data)
 {
     var title=data.title;
