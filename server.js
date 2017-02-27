@@ -100,9 +100,9 @@ function createTemplate(data)
                 <div>
                     ${date.toDateString()}
                 </div>
-                <div>
+                <p>
                    ${content}
-                </div>
+                </p>
             </div>
         </body>
     </html>`;
